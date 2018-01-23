@@ -1,0 +1,43 @@
+body {
+	background: none;
+}
+
+div.homepage {
+	width: auto;
+}
+
+div.profile div.website {
+	display: block;
+}
+
+div.header {
+	display: none;
+}
+
+div.mainBlock {
+	margin-top: 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+div.lastBlock{
+	border-bottom: 0;
+}
+
+div.footer {
+	display: none;
+}
+
+.noprint {
+	display: none;
+}
+
+a {
+	color: #222222;
+}
+
+a.external {
+	background: none;
+	padding-right: 0;
+}

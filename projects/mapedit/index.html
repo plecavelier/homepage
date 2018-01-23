@@ -1,0 +1,32 @@
+<div class="text mainBlock">	
+	<h1>Editeur de cartes géographiques</h1>
+
+	<h2>Présentation</h2>
+
+	<p>Le but de ce projet était de créer un programme permettant de transformer des données géométriques en cartes géographiques.</p>
+
+	<h2>Format des données en entrée</h2>
+
+	<p>Les données passées en entrée du programme étaient au format mif/mid qui est un format d'échange MapInfo.
+	Le fichier avec l'extension .mif contient la géométrie et celui avec l'extension .mid contient les données.
+	Ce format est utilisé comme import/export dans la plupart des logiciels 
+	<a target="_blank" class="external" href="http://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27information_g%C3%A9ographique">SIG</a>.</p>
+
+	<h2>Transformation des fichiers mif/mid</h2>
+
+	<p>Il s'agissait à ensuite de transformer les données présentées ci-dessus pour obtenir un résultat visualisable. Nous devions donc parser ces 2 fichiers
+	pour en extraire les données et construire en sortie un fichier contenant la carte géographique.</p>
+
+
+	<h2>Format de la carte en sortie</h2>
+
+	<p>Pour dessiner la carte géographique, nous avons opté pour deux formats, PDF et <a target="_blank" class="external" href="http://fr.wikipedia.org/wiki/Svg">SVG</a>.
+	Vous pouvez visualiser un exemple de <a href="projects/mapedit/map.pdf">carte au format PDF</a> et voir ci-dessous <a href="projects/mapedit/map.svg">le résultat en SVG</a>.</p>
+
+	<br/>
+	
+	<object type="image/svg+xml" data="projects/mapedit/map.svg">
+		<img src="projects/mapedit/map.png" alt=""/>
+	</object>
+
+</div>

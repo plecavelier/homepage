@@ -1,0 +1,99 @@
+<div class="text mainBlock">
+
+	<h1>Algorithme A*</h1>
+
+	<h2>Introduction</h2>
+
+	<p>Le but de ce projet était d'implémenter un algorithme A* en Haskell dans le but de trouver le chemin le plus court dans un labyrinthe, d'une position
+	de départ à une position d'arrivée.</p>
+
+	<br/>
+
+	<p>Notre algorithme prend donc en entrée :</p>
+
+	<ul>
+		<li><p>Un labyrinthe</p></li>
+		<li><p>Un état initial (position de départ)</p></li>
+		<li><p>Un état final (position d'arrivée)</p></li>
+	</ul>
+
+	<br/>
+
+	<p>Puis il va appliquer à chaque état intermédiaire du chemin une évaluation heuristique tel que :</p>
+
+	<ul>
+		<li><p><i>f = g + h</i> l'évaluation heuristique</p></li>
+		<li><p><i>g</i> étant l'évaluation du coût pour aller de l'état initial à l'état intermédiaire</p></li>
+		<li><p><i>h</i> étant l'évaluation du coût pour aller de l'état intermédiaire à l'état final selon un critère</p></li>
+	</ul>
+
+	<br/>
+
+	<p>Et enfin, il va visiter récursivement les états par ordre de cette évaluation heuristique jusqu'à arriver à l'état final.</p>
+
+
+	<h2>Les critères utilisés</h2>
+
+	<p>Il faut donc pouvoir calculer le coût <i>h</i> pour aller de l'état intermédiaire à l'état final, respectivement représentés par les couples
+	de coordonnées cartésiennes <i>(xc, yc)</i> et <i>(xf, yf)</i>. Pour cela, nous avons utilisé trois critères :</i>
+
+	<ul>
+		<li><p>Distance Manhattan</p></li>
+		<li><p>Distance Euclidienne</p></li>
+		<li><p>Proximité des obstacles</p></li>
+	</ul>
+
+	<br/>
+
+	<p>Pour la première méthode, il suffit de calculer la distance Manhattan entre la position intermédiaire et la position finale <i>d = |xf - xc| + |yf - yc|</i></p>
+
+	<br/>
+
+	<p>Pour la méthode suivante, on calcule la distance euclidienne entre les deux positions <i>d = racine_carree((xf - xc)^2 + (yf - yc)^2)</i></p>
+
+	<br/>
+
+	<p>Enfin, pour la dernière méthode, l'énoncé du sujet indique que <i>"plus on s'éloigne des obstacles, mieux le chemin est"</i>. Nous avons
+	donc décidé de chercher à nous éloigner le plus possible des obstacles mais <i>seulement</i> de ceux qui sont derrière la position intermédiaire par
+	rapport à la position finale.</p>
+	<p>Par exemple, dans les labyrinthes suivants, nous allons chercher à nous éloigner seulement des obstacles contenus dans la zone grisée.</p>
+
+	<br/>
+
+	<img src="projects/astar/lab1.png" alt=""/>
+
+	<h2>Algorithme A* multicritères</h2>
+
+	<p>Un algorithme multicritères fonctionne selon le même principe, à l'exception qu'il fait une évaluation heuristique en fonction des trois critères présentés précédemment. 
+	L'algorithme fait donc une évaluation heuristique pour chaque intermédiaire tel que :</p>
+
+	<ul>
+		<li><p><i>(f1, f2, f3) = (g1, g2, g3) + (h1, h2, h3)</i> l'évaluation heuristique</p></li>
+		<li><p><i>(g1, g2, g3) = (g, g, g)</i> avec <i>g</i> étant l'évaluation du coût pour aller de l'état initial à l'état intermédiaire</p></li>
+		<li><p><i>(h1, h2, h3)</i> avec <i>h1</i>, <i>h2</i> et <i>h3</i> les coûts pour aller de l'état intermédiaire à l'état final selon les trois critères
+		(distances Manhattan, distance Euclidienne et proximité des obstacles)</p></li>
+	</ul>
+
+	<br/>
+
+	<p>Nous avons ensuite utilisé un ensemble de méthodes pour comparer les vecteurs <i>(f1, f2, f3)</i> des différents états :</p>
+
+	<ul>
+		<li><p>Somme</p></li>
+		<li><p>Moyenne pondérée</p></li>
+		<li><p>MinMax</p></li>
+		<li><p>Lexicographique</p></li>
+		<li><p>MinEcart</p></li>
+		<li><p>Somme des bornes</p></li>
+	</ul>
+
+	<h2>Résultats de l'algorithme</h2>
+
+	<p>On peut visualiser les chemins choisis par l'algorithme sur les labyrinthes suivants 
+	(Les cases D, A  et N correspondant respectivement au point de départ, au point d'arrivée et aux obstacles alors que les étoiles correspondent 
+	au chemin parcouru). On constate que l'algorithme prend bien le chemin le plus court pour chaque labyrinthe.</p>
+
+	<br/>
+
+	<img src="projects/astar/lab2.png" alt=""/>
+</div>
