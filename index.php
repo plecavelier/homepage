@@ -5,15 +5,15 @@ $output = <<<EOT
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>Pierre Lecavelier - Parcours professionnel</title>
-		<meta name="description" content="Parcours professionnel de Pierre Lecavelier : expériences professionnelles, parcours universitaire, compétences" />
+		<title>Profil de Pierre Lecavelier</title>
+		<meta name="description" content="Profil de Pierre Lecavelier : expériences professionnelles, parcours universitaire, compétences" />
 		
 		<meta name="viewport" content="width=device-width" />
 		
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="author" content="Pierre Lecavelier" />
 		
-		<link href="css/homepage.css" rel="stylesheet" type="text/css" />
+		<link href="css/screen.css" rel="stylesheet" type="text/css" />
 		<link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
 		
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -35,7 +35,7 @@ $output = <<<EOT
         <meta name="theme-color" content="#ffffff">
         
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/homepage.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
 	
@@ -43,10 +43,10 @@ $output = <<<EOT
 EOT;
 
 $xmlDom = new DOMDocument();
-$xmlDom->load("homepage.xml");
+$xmlDom->load("content.xml");
 
 $xslDom = new DOMDocument();
-$xslDom->load("homepage.xsl");
+$xslDom->load("transformer.xsl");
 
 $xslt = new XSLTProcessor();
 $xslt->importStyleSheet($xslDom);
