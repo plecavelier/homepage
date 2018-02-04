@@ -9,11 +9,14 @@
 
 	<xsl:template match="homepage">
 		<div class="menu">
-			<h1><a href="#profile">Profil</a></h1>
-			<h1><a href="#{experiences[@fid = 'jobs']/@fid}"><xsl:value-of select="experiences[@fid = 'jobs']/title" /></a></h1>
-			<h1><a href="#{experiences[@fid = 'studies']/@fid}"><xsl:value-of select="experiences[@fid = 'studies']/title" /></a></h1>
-			<h1><a href="#{competences[@fid = 'competences']/@fid}"><xsl:value-of select="competences[@fid = 'competences']/title" /></a></h1>
-			<h1><a href="#{competences[@fid = 'leisures']/@fid}"><xsl:value-of select="competences[@fid = 'leisures']/title" /></a></h1>
+			<ul>
+				<li><a href="#profile" data-scroll-link="">Profil</a></li>
+				<li><a href="#{experiences[@fid = 'jobs']/@fid}" data-scroll-link=""><xsl:value-of select="experiences[@fid = 'jobs']/title" /></a></li>
+				<li><a href="#{experiences[@fid = 'studies']/@fid}" data-scroll-link=""><xsl:value-of select="experiences[@fid = 'studies']/title" /></a></li>
+				<li><a href="#{competences[@fid = 'competences']/@fid}" data-scroll-link=""><xsl:value-of select="competences[@fid = 'competences']/title" /></a></li>
+				<li><a href="#{competences[@fid = 'leisures']/@fid}" data-scroll-link=""><xsl:value-of select="competences[@fid = 'leisures']/title" /></a></li>
+			</ul>
+			<div class="print"><a href="javascript:void(0)" onClick="window.print()">Imprimer</a></div>
 		</div>
 		<xsl:apply-templates select="profile" />
 		<xsl:apply-templates select="experiences[@fid = 'jobs']" />
@@ -24,48 +27,51 @@
 
 	<xsl:template match="profile">
 		<div id="profile" class="mainBlock profile">
-			<h1 class="name">
+			<div class="photo">
+				<img src="{photo/@src}" alt="" />
+			</div>
+			<h1 class="title">
 				<xsl:value-of select="name" />
 			</h1>
-			<h3 class="profession">
+			<h2 class="profession">
 				<xsl:value-of select="profession" />
-			</h3>
+			</h2>
 			<div class="infos">
-				<div class="identity">
-					<p style="background-image: url('{nationality/@icon}')">
+				<ul>
+					<li style="background-image: url('{nationality/@icon}')">
 						<xsl:value-of select="nationality" />
-					</p>
-					<p style="background-image: url('{status/@icon}')">
+					</li>
+					<li style="background-image: url('{status/@icon}')">
 						<xsl:value-of select="status" />
-					</p>
-					<p style="background-image: url('{birthyear/@icon}')">
+					</li>
+					<li style="background-image: url('{birthyear/@icon}')">
 						<xsl:variable name="var1" select="$year" />
 						<xsl:variable name="var2" select="birthyear" />
 						<xsl:value-of select="$var1+(-$var2)+(-1)" />
 						<xsl:text> ans</xsl:text>
-					</p>
-					<p style="background-image: url('{drive/@icon}')">
+					</li>
+					<li style="background-image: url('{drive/@icon}')">
 						<xsl:value-of select="drive" />
-					</p>
-				</div>
-				<div class="contact">
-					<p style="background-image: url('{address/@icon}')">
+					</li>
+				</ul>
+				<ul>
+					<li style="background-image: url('{address/@icon}')">
 						<xsl:value-of select="address/street" />
-					</p>
-					<p>
+					</li>
+					<li>
 						<xsl:value-of select="address/code" />
 						<xsl:text> </xsl:text>
 						<xsl:value-of select="address/city" />
-					</p>
-					<p style="background-image: url('{mail/@icon}')">
+					</li>
+					<li style="background-image: url('{mail/@icon}')">
 						<a href="mailto:{mail}">
 							<xsl:value-of select="mail" />
 						</a>
-					</p>
-					<p style="background-image: url('{phone/@icon}')">
+					</li>
+					<li style="background-image: url('{phone/@icon}')">
 						<xsl:value-of select="phone" />
-					</p>
-				</div>
+					</li>
+				</ul>
 			</div>
 			<div class="links noprint">
 				<xsl:for-each select="links/link">
@@ -77,19 +83,14 @@
 			<div class="website">
 				<p>Page source : http://pierre.crashdump.net/</p>
 			</div>
-			<div class="photo">
-				<img src="photos/{photo/@src}" alt="" />
-			</div>
 		</div>
 	</xsl:template>
 
 	<xsl:template match="experiences">
 		<div id="{@fid}" class="mainBlock experiences">
-			<div class="title">
-				<h1>
-					<xsl:value-of select="title" />
-				</h1>
-			</div>
+			<h3 class="title">
+				<xsl:value-of select="title" />
+			</h3>
 			<xsl:for-each select="experience">
 				<div class="experience">
 					<div class="left">
@@ -135,11 +136,9 @@
 
 	<xsl:template match="competences">
 		<div id="{@fid}" class="mainBlock competences">
-			<div class="title">
-				<h1>
-					<xsl:value-of select="title" />
-				</h1>
-			</div>
+			<h3 class="title">
+				<xsl:value-of select="title" />
+			</h3>
 			<div class="left">
 				<img src="{logo}" alt="" width="{logo/@width}" />
 			</div>
@@ -147,7 +146,7 @@
 				<ul>
 					<xsl:for-each select="competence">
 						<li>
-							<xsl:apply-templates select="." />
+							<p><xsl:apply-templates select="." /></p>
 						</li>
 					</xsl:for-each>
 				</ul>

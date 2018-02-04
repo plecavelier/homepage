@@ -1,80 +1,64 @@
 <?php
 
-require_once("tools/xslt_process.php");
-
-if (!isset($_GET['page'])) {
-	$_GET['page'] = "";
-}
-switch ($_GET['page']) {
-
-	case "mapedit":
-	$title = "Editeur de cartes géographiques";
-	$html = "projects/mapedit/index.html";
-	break;
-
-	case "astar":
-	$title = "Algorithme A*";
-	$html = "projects/astar/index.html";
-	break;
-
-	case "ripsim":
-	$title = "Simulation du protocole de routage RIP";
-	$html = "projects/ripsim/index.html";
-	break;
-
-	case "shisensho":
-	$title = "Jeu du shisensho";
-	$html = "projects/shisensho/index.html";
-	break;
-
-	case "search":
-	$title = "Moteur de recherche multilingue";
-	$html = "projects/search/index.html";
-	break;
-	
-	default:
-	$title = "Page personnelle de Pierre Lecavelier";
-	$xml = "homepage.xml";
-	$xsl = "homepage.xsl";
-	break;
-}
-
-$year = date("Y");
-
 $output = <<<EOT
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>{$title}</title>
+		<title>Pierre Lecavelier - Parcours professionnel</title>
+		<meta name="description" content="Parcours professionnel de Pierre Lecavelier : expériences professionnelles, parcours universitaire, compétences" />
+		
+		<meta name="viewport" content="width=device-width" />
+		
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Ingénieur en technologies de l'information chez Logica" />
-		<link href="homepage.css" rel="stylesheet" type="text/css" />
-		<link href="print.css" rel="stylesheet" type="text/css" media="print" />
-		<link rel="image_src" href="images/competences.png" />
+		<meta name="author" content="Pierre Lecavelier" />
+		
+		<link href="css/homepage.css" rel="stylesheet" type="text/css" />
+		<link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/homepage.js"></script>
 	</head>
 	<body>
 	
 		<div class="homepage">
-			<div class="header">
-				<h1><a href="?page=home">Page personnelle de Pierre Lecavelier</a></h1>
-				<div class="band"></div>
-			</div>
 EOT;
 
-if (isset($html)) {
-	ob_start();
-	require_once($html);
-	$output .= ob_get_clean();
-}
-else if (isset($xml) and isset($xsl)) {
-	$output .= xslt_process($xml, $xsl, array("year" => $year));
-}
+$xmlDom = new DOMDocument();
+$xmlDom->load("homepage.xml");
+
+$xslDom = new DOMDocument();
+$xslDom->load("homepage.xsl");
+
+$xslt = new XSLTProcessor();
+$xslt->importStyleSheet($xslDom);
+
+$year = date("Y");
+$xslt->setParameter("", "year", $year);
+
+$output .= $xslt->transformToXML($xmlDom);
 
 $output.= <<<EOT
 			<div class="footer">
-				<p>Page personnelle de Pierre Lecavelier 2006-{$year} | dernière mise à jour le 08/09/2015</p>
-				<div class="band"></div>
+				<p>Page personnelle de Pierre Lecavelier 2006-{$year} | dernière mise à jour le 23/01/2018</p>
 			</div>
 		</div>
 
@@ -84,5 +68,3 @@ EOT;
 
 header("Content-type: text/html; charset=utf-8");
 print $output;
-
-?>

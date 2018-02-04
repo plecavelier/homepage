@@ -4,75 +4,75 @@
 	<profile>
 		<name>Pierre Lecavelier</name>
 		<profession>Chef de projet technique spécialisé en agilité, Java, web &amp; mobilité</profession>
-		<address icon="images/address.png">
+		<address icon="img/address.png">
 			<street>215 route de Vienne</street>
 			<code>69008</code>
 			<city>Lyon</city>
 		</address>
-		<phone icon="images/phone.png">+33 6 52 95 13 32</phone>
-		<mail icon="images/mail.png">pierre.lecavelier@gmail.com</mail>
-		<nationality icon="images/nationality.png">Nationalité française</nationality>
-		<status icon="images/status.png">Concubinage</status>
-		<birthyear icon="images/age.png">1984</birthyear>
-		<drive icon="images/drive.png">Titulaire du permis B</drive>
+		<phone icon="img/phone.png">+33 6 52 95 13 32</phone>
+		<mail icon="img/mail.png">pierre.lecavelier@gmail.com</mail>
+		<nationality icon="img/nationality.png">Nationalité française</nationality>
+		<status icon="img/status.png">Concubinage</status>
+		<birthyear icon="img/age.png">1984</birthyear>
+		<drive icon="img/drive.png">Titulaire du permis B</drive>
 		<links>
 			<link>
 				<label>Mon profil Viadeo</label>
 				<url>http://fr.viadeo.com/fr/profile/pierre.lecavelier</url>
-				<icon>images/viadeo.png</icon>
+				<icon>img/viadeo.png</icon>
 			</link>
 			<link>
 				<label>Ma page Facebook</label>
 				<url>http://fr-fr.facebook.com/people/Pierre-Lecavelier/1190807935</url>
-				<icon>images/facebook.png</icon>
+				<icon>img/facebook.png</icon>
 			</link>
 			<link>
 				<label>Mon compte GitHub</label>
 				<url>https://github.com/plecavelier/</url>
-				<icon>images/github.png</icon>
+				<icon>img/github.png</icon>
 			</link>
 		</links>
-		<photo src="portrait7.jpg"/>
+		<photo src="img/photo.jpg"/>
 	</profile>
 
 	<experiences fid="jobs">
-		<title>Expériences professionelles</title>
+		<title>Expériences professionnelles</title>
 		<experience>
 			<start>avr. 2012</start>
-			<logo width="140">images/ingenico2.png</logo>
+			<logo width="140">img/ingenico2.png</logo>
 			<description>Responsable des développements informatiques pour <a href="http://www.ingenico.com/" class="external" target="_blank">Ingenico</a> Prepaid Services à Caen</description>
 			<details>
 				<detail>
 					<p>Gestion de projet :</p>
 					<ul>
-						<li>Management de l'équipe de développement composée de 1 à 4 consultants externes en fonction des projets</li>
-						<li>Suivi de l'activité de l'équipe et reporting auprès de la direction</li>
-						<li>Estimation de charges et mise en place d'abaques fiables</li>
-						<li>Planification des projets et respect des délais</li>
-						<li>Relations commerciales avec les SSII et recrutement des consultants</li>
-						<li>Utilisation de méthodologies agiles (Scrum) pour améliorer la qualité des solutions livrées</li>
-						<li>Mise en place d'un outil de suivi de tickets et d'un outil de suivi de tests</li>
+						<li><p>Management de l'équipe de développement composée de 1 à 4 consultants externes en fonction des projets</p></li>
+						<li><p>Suivi de l'activité de l'équipe et reporting auprès de la direction</p></li>
+						<li><p>Estimation de charges et mise en place d'abaques fiables</p></li>
+						<li><p>Planification des projets et respect des délais</p></li>
+						<li><p>Relations commerciales avec les SSII et recrutement des consultants</p></li>
+						<li><p>Utilisation de méthodologies agiles (Scrum) pour améliorer la qualité des solutions livrées</p></li>
+						<li><p>Mise en place d'un outil de suivi de tickets et d'un outil de suivi de tests</p></li>
 					</ul>
 				</detail>
 				<detail>
 					<p>Technique :</p>
 					<ul>
-						<li>Urbanisation et rationalisation du SI de la société</li>
-						<li>Lead technique pour les consultants externes</li>
-						<li>Mise en place de nombreuses architectures logicielles (Java EE, SOA, web, mobile)</li>
-						<li>Développement piloté par les tests en Java, PHP et JavaScript</li>
-						<li>Définition des stratégies de tests automatisés et des bonnes pratiques de développement</li>
-						<li>Optimisation des processus de développement grâce aux méthodes DevOps (intégration, livraison, déploiement continue)</li>
-						<li>Maintenance du parc applicatif de la société</li>
+						<li><p>Urbanisation et rationalisation du SI de la société</p></li>
+						<li><p>Lead technique pour les consultants externes</p></li>
+						<li><p>Mise en place de nombreuses architectures logicielles (Java EE, SOA, web, mobile)</p></li>
+						<li><p>Développement piloté par les tests en Java, PHP et JavaScript</p></li>
+						<li><p>Définition des stratégies de tests automatisés et des bonnes pratiques de développement</p></li>
+						<li><p>Optimisation des processus de développement grâce aux méthodes DevOps (intégration, livraison, déploiement continue)</p></li>
+						<li><p>Maintenance du parc applicatif de la société</p></li>
 					</ul>
 				</detail>
 				<detail>
 					<p>Projets clés :</p>
 					<ul>
-						<li>Solution de transfert d'argent innovante sur borne pour un déploiement en grande distribution</li>
-						<li>Intégration de SAP Business One et mise en place des interfaces pour l'échange automatique de données</li>
-						<li>Déploiement des services prépayés sur un nouveau système d'encaissement permettant l'accès à de nouveaux marchés</li>
-						<li>Refonte de la plateforme transactionnelle de la société pour fiabiliser et optimiser la distribution des produits</li>
+						<li><p>Solution de transfert d'argent innovante sur borne pour un déploiement en grande distribution</p></li>
+						<li><p>Intégration de SAP Business One et mise en place des interfaces pour l'échange automatique de données</p></li>
+						<li><p>Déploiement des services prépayés sur un nouveau système d'encaissement permettant l'accès à de nouveaux marchés</p></li>
+						<li><p>Refonte de la plateforme transactionnelle de la société pour fiabiliser et optimiser la distribution des produits</p></li>
 					</ul>
 				</detail>
 			</details>
@@ -80,32 +80,32 @@
 		<experience>
 			<start>avr. 2009</start>
 			<stop>avr. 2012</stop>
-			<logo width="130">images/cgi.png</logo>
+			<logo width="130">img/cgi.png</logo>
 			<description>Responsable technique pour la SSII <a href="http://www.cgi.com/fr" class="external" target="_blank">CGI</a> à Caen</description>
 			<details>
 				<detail>
 					<p>Gestion de projet :</p>
 					<ul>
-						<li>ScrumMaster d'une équipe de 3 développeurs</li>
-						<li>Relation client et participation à la rédaction des cahiers des charges</li>
-						<li>Estimation de charges et avant-vente</li>
+						<li><p>ScrumMaster d'une équipe de 3 développeurs</p></li>
+						<li><p>Relation client et participation à la rédaction des cahiers des charges</p></li>
+						<li><p>Estimation de charges et avant-vente</p></li>
 					</ul>
 				</detail>
 				<detail>
 					<p>Technique :</p>
 					<ul>
-						<li>Lead technique pour l'équipe Scrum</li>
-						<li>Rédaction de spécifications fonctionnelles et techniques</li>
-						<li>Mise en place d'une architecture logicielle basée sur Java EE</li>
-						<li>Développement piloté par les tests</li>
-						<li>Rédaction et passage de campagnes de tests</li>
+						<li><p>Lead technique pour l'équipe Scrum</p></li>
+						<li><p>Rédaction de spécifications fonctionnelles et techniques</p></li>
+						<li><p>Mise en place d'une architecture logicielle basée sur Java EE</p></li>
+						<li><p>Développement piloté par les tests</p></li>
+						<li><p>Rédaction et passage de campagnes de tests</p></li>
 					</ul>
 				</detail>
 				<detail>
 					<p>Projets clés :</p>
 					<ul>
-						<li>Plate-forme SaaS d'édition graphique de services vocaux (<a href="http://www.orange-business.com/fr/produits/guide-vocal" class="external" target="_blank">Guide Vocal</a>) pour Orange</li>
-						<li>Plate-forme SaaS de gestion de transactions monétiques (<a href="https://www.afonepilot.com" class="external" target="_blank">AfonePilot</a>) pour <a href="http://www.afone.com/" class="external" target="_blank">Afone</a></li>
+						<li><p>Plate-forme SaaS d'édition graphique de services vocaux (<a href="http://www.orange-business.com/fr/produits/guide-vocal" class="external" target="_blank">Guide Vocal</a>) pour Orange</p></li>
+						<li><p>Plate-forme SaaS de gestion de transactions monétiques (<a href="https://www.afonepilot.com" class="external" target="_blank">AfonePilot</a>) pour <a href="http://www.afone.com/" class="external" target="_blank">Afone</a></p></li>
 					</ul>
 				</detail>
 			</details>
@@ -113,7 +113,7 @@
 		<experience>
 			<start>sep. 2007</start>
 			<stop>fév. 2009</stop>
-			<logo width="80">images/ens.png</logo>
+			<logo width="80">img/ens.png</logo>
 			<description>Analyste développeur pour l'<a href="http://www.ens-cachan.fr/" class="external" target="_blank">école normale supérieure de Cachan</a></description>
 			<details>
 				<detail>
@@ -125,7 +125,7 @@
 		<experience>
 			<start>juil. 2007</start>
 			<stop>sep. 2007</stop>
-			<logo width="120">images/greyc.png</logo>
+			<logo width="120">img/greyc.png</logo>
 			<description>Chercheur stagiaire pour le <a href="http://www.greyc.unicaen.fr/" class="external" target="_blank">Greyc</a> à Caen au sein de l'équipe Island</description>
 			<details>
 				<detail>
@@ -140,21 +140,21 @@
 		<experience>
 			<start>oct. 2007</start>
 			<stop>avr. 2009</stop>
-			<logo width="130" class="noprint">images/unicaen.png</logo>
+			<logo width="130" class="noprint">img/unicaen.png</logo>
 			<description>Master RADIS (réseaux, applications documentaires, ingénierie et sécurité) à l'<a href="http://www.info.unicaen.fr" class="external" target="_blank">université de Caen</a> (Mention B)</description>
 			<details>
 				<detail class="noprint">
 					<p>Master RADIS 2ème année</p>
 					<ul>
-						<li>Enseignements : codes correcteurs d'erreurs, compression, cryptographie, imagerie, réseaux et protocoles, sciences de l'ingénieur, traitement automatique des langues</li>
-						<li>Projets : génération automatique d'interfaces graphiques (XHTML) et vocales (VoiceXML), participation à la <a href="http://www.robocuprescue.org/" target="_blank" class="external">Robocup Rescue</a></li>
+						<li><p>Enseignements : codes correcteurs d'erreurs, compression, cryptographie, imagerie, réseaux et protocoles, sciences de l'ingénieur, traitement automatique des langues</p></li>
+						<li><p>Projets : génération automatique d'interfaces graphiques (XHTML) et vocales (VoiceXML), participation à la <a href="http://www.robocuprescue.org/" target="_blank" class="external">Robocup Rescue</a></p></li>
 					</ul>
 				</detail>
 				<detail class="noprint">
 					<p>Master RADIS 1ère année</p>
 					<ul>
-						<li>Enseignements : communication, génie logiciel, intelligence artificielle distribuée, méthodes algorithmiques, programmation avancée des systèmes et réseaux, réseaux et protocoles, traitement automatique des langues</li>
-						<li>Projets : IHM de recherche musicale Moogle, robots extracteurs de minerai, détection automatique de citations, classification automatique de documents, <a href="?page=ripsim">simulation du protocole de routage RIP</a></li>
+						<li><p>Enseignements : communication, génie logiciel, intelligence artificielle distribuée, méthodes algorithmiques, programmation avancée des systèmes et réseaux, réseaux et protocoles, traitement automatique des langues</p></li>
+						<li><p>Projets : IHM de recherche musicale Moogle, robots extracteurs de minerai, détection automatique de citations, classification automatique de documents, simulation du protocole de routage RIP</p></li>
 					</ul>
 				</detail>
 			</details>
@@ -162,28 +162,28 @@
 		<experience>
 			<start>oct. 2003</start>
 			<stop>juin 2007</stop>
-			<logo width="130" class="noprint">images/unicaen.png</logo>
+			<logo width="130" class="noprint">img/unicaen.png</logo>
 			<description>Licence informatique à l'<a href="http://www.info.unicaen.fr" class="external" target="_blank">université de Caen</a> (mention AB)</description>
 			<details>
 				<detail class="noprint">
 					<p>Licence informatique 3ème année</p>
 					<ul>
-						<li>Enseignements : communication, génie logiciel, langages et compilation, méthodes algorithmiques, programmation fonctionnelle, programmation orientée objet, systèmes et réseaux, systèmes d'informations, technologies web</li>
-						<li>Projets : carré latin, <a href="?page=search">moteur de recherche multilingue</a>, <a href="?page=shisensho">jeu du Shisensho</a>, Mastermind, <a href="?page=astar">algorithme A*</a></li>
+						<li><p>Enseignements : communication, génie logiciel, langages et compilation, méthodes algorithmiques, programmation fonctionnelle, programmation orientée objet, systèmes et réseaux, systèmes d'informations, technologies web</p></li>
+						<li><p>Projets : carré latin, moteur de recherche multilingue, jeu du Shisensho, Mastermind, algorithme A*</p></li>
 					</ul>
 				</detail>
 				<detail class="noprint">
 					<p>Licence informatique 2ème année</p>	
 					<ul>					
-						<li>Enseignements : bases de données, information géographique, linguistique et traitement automatique des langues, mathématiques pour l'informatique, méthodes algorithmiques, programmation fonctionnelle, modélisation mathématique et informatique, programmation et visualisation scientifique, systèmes d'exploitations</li>
-						<li>Projets : <a href="?page=mapedit">éditeur de cartes géographiques</a>, jeu de la vie</li>
+						<li><p>Enseignements : bases de données, information géographique, linguistique et traitement automatique des langues, mathématiques pour l'informatique, méthodes algorithmiques, programmation fonctionnelle, modélisation mathématique et informatique, programmation et visualisation scientifique, systèmes d'exploitations</p></li>
+						<li><p>Projets : éditeur de cartes géographiques, jeu de la vie</p></li>
 					</ul>
 				</detail>
 				<detail class="noprint">
 					<p>Licence informatique 1ère année</p>	
 					<ul>					
-						<li>Enseignements : chimie, électronique, introduction à la programmation, introduction au développement web, mathématiques, physique, statistiques</li>
-						<li>Projets : fractales, site internet HTML</li>
+						<li><p>Enseignements : chimie, électronique, introduction à la programmation, introduction au développement web, mathématiques, physique, statistiques</p></li>
+						<li><p>Projets : fractales, site internet HTML</p></li>
 					</ul>
 				</detail>
 			</details>
@@ -211,7 +211,7 @@
 		<competence><b>Serveurs Web</b> : Apache HTTP Server, Apache Tomcat</competence>
 		<competence><b>Cloud</b> : Amazon Web Services</competence>
 		<competence><b>Langues</b> : Anglais (lu et écrit)</competence>
-		<logo width="160">images/competences.png</logo>
+		<logo width="160">img/competences.png</logo>
 	</competences>
 
 	<competences fid="leisures">
