@@ -3,28 +3,28 @@
 
 	<profile>
 		<name>Pierre Lecavelier</name>
-		<profession>Chef de projet technique spécialisé en agilité, Java, web &amp; mobilité</profession>
+		<profession>Directeur technique spécialisé en architecture/développement web, DevOps &amp; agilité</profession>
 		<address icon="img/address.png">
-			<street>215 route de Vienne</street>
+			<street>30 rue Joseph Chapelle</street>
 			<code>69008</code>
 			<city>Lyon</city>
 		</address>
 		<phone icon="img/phone.png">+33 6 52 95 13 32</phone>
 		<mail icon="img/mail.png">pierre.lecavelier@gmail.com</mail>
 		<nationality icon="img/nationality.png">Nationalité française</nationality>
-		<status icon="img/status.png">Concubinage</status>
+		<status icon="img/status.png">Pacsé</status>
 		<birthyear icon="img/age.png">1984</birthyear>
 		<drive icon="img/drive.png">Titulaire du permis B</drive>
 		<links>
 			<link>
+				<label>Mon profil LinkedIn</label>
+				<url>https://www.linkedin.com/in/pierre-lecavelier-054478141/</url>
+				<icon>img/linkedin.png</icon>
+			</link>
+			<link>
 				<label>Mon profil Viadeo</label>
 				<url>http://fr.viadeo.com/fr/profile/pierre.lecavelier</url>
 				<icon>img/viadeo.png</icon>
-			</link>
-			<link>
-				<label>Ma page Facebook</label>
-				<url>http://fr-fr.facebook.com/people/Pierre-Lecavelier/1190807935</url>
-				<icon>img/facebook.png</icon>
 			</link>
 			<link>
 				<label>Mon compte GitHub</label>
@@ -38,41 +38,47 @@
 	<experiences fid="jobs">
 		<title>Expériences professionnelles</title>
 		<experience>
-			<start>avr. 2012</start>
-			<logo width="140">img/ingenico2.png</logo>
-			<description>Responsable des développements informatiques pour <a href="http://www.ingenico.com/" class="external" target="_blank">Ingenico</a> Prepaid Services à Caen</description>
+			<start>juin 2015</start>
+			<logo width="140">img/groupe361.jpg</logo>
+			<description>Directeur technique pour l'agence <a href="https://groupe361.com/" class="external" target="_blank">Groupe 361</a> à Lyon</description>
 			<details>
 				<detail>
-					<p>Gestion de projet :</p>
 					<ul>
-						<li><p>Management de l'équipe de développement composée de 1 à 4 consultants externes en fonction des projets</p></li>
-						<li><p>Suivi de l'activité de l'équipe et reporting auprès de la direction</p></li>
-						<li><p>Estimation de charges et mise en place d'abaques fiables</p></li>
-						<li><p>Planification des projets et respect des délais</p></li>
+						<li><p>Activités de prestation de services B2B et B2C, édition logicielle sur les solutions de l'agence (<a href="http://www.opinion-tracker.fr">Opinion Tracker</a>, <a href="http://www.brand-advocacy.fr">ALM</a>)</p></li>
+						<li><p>Management de l'équipe de développement composée de 2 lead dévs, 4 développeurs et 2 intégrateurs</p></li>
+						<li><p>Diffusion culture agile au sein de l'agence et réorganisation de l'équipe pour favoriser la collaboration, la communication et le partage</p></li>
+						<li><p>Choix technologiques et définition de la stack technique : Symfony, Angular, Ionic, Wordpress, Prestashop</p></li>
+						<li><p>Conception technique, architecture &amp; développement sur les solutions complexes</p></li>
+						<li><p>Veille technique, mise en place d'ateliers internes (Lunch &amp; Learn), participation meetups et événements (Symfony Live, MiXiT)</p></li>
+						<li><p>Acculturation de l'équipe aux bonnes pratiques de développement : TDD, SOLID, KISS, DRY</p></li>
+						<li><p>Mise en place outillage DevOps : automatisation des environnements de dév (Docker), intégration continue (Jenkins/SonarQube), déploiement automatique (DeployBot), monitoring applicatif</p></li>
+						<li><p>Accompagnement DevOps des clients pour fluidifier les interactions avec leurs équipes d'exploitation</p></li>
+						<li><p>Gestion hébergeurs et infogérants pour assurer la maintenance et la sécurité de l'infrastructure de l'agence (cloud privé, serveurs dédiés et mutualisés)</p></li>
+						<li><p>Accompagnement technique sur les appels d'offre et estimation des projets à partir d'abaques basés sur les retours d'expérience</p></li>
+						<li><p>Mise en place process de saisie de temps et tableaux de bord associés (Redmine + Bime Analytics) pour suivre l'activité de l'agence</p></li>
+						<li><p>Planification des projets, respect des délais et engagements</p></li>
+					</ul>
+				</detail>
+			</details>
+		</experience>
+		<experience>
+			<start>avr. 2012</start>
+			<stop>juin 2015</stop>
+			<logo width="140">img/ingenico2.png</logo>
+			<description>Responsable technique pour <a href="http://www.ingenico.com/" class="external" target="_blank">Ingenico</a> Prepaid Services à Caen</description>
+			<details>
+				<detail>
+					<ul>
+						<li><p>Lead technique de l'équipe de développement composée de 1 à 4 consultants externes en fonction des projets</p></li>
+						<li><p>Urbanisation et rationalisation du SI : mise en place d'une stratégie SOA (microservices), intégration de l'ERP SAP Business One, développement d'un Back Office centralisé et d'un outil de facturation automatique</p></li>
+						<li><p>Refonte de la plateforme transactionnelle pour fiabiliser et optimiser les millions de transactions générées chaque année</p></li>
+						<li><p>Création d'une application de transfert d'argent innovante sur tablette et de plusieurs applications de distribution des produits dématérialisés sur desktop, systèmes de caisse et TPE</p></li>
+						<li><p>Amélioration de la qualité des développements et de la chaîne de production grâce aux méthodologies agiles et aux techniques DevOps (intégration continue, déploiement automatique)</p></li>
+						<li><p>Choix technologiques et définition de la stack technique : Java EE, Symfony, jQuery Mobile, Backbone.js, Android</p></li>
+						<li><p>Installation et configuration d'un outil de suivi de tickets (Mantis) et d'un outil de suivi de tests (TestLink) à destination des chefs de projet</p></li>
 						<li><p>Relations commerciales avec les SSII et recrutement des consultants</p></li>
-						<li><p>Utilisation de méthodologies agiles (Scrum) pour améliorer la qualité des solutions livrées</p></li>
-						<li><p>Mise en place d'un outil de suivi de tickets et d'un outil de suivi de tests</p></li>
-					</ul>
-				</detail>
-				<detail>
-					<p>Technique :</p>
-					<ul>
-						<li><p>Urbanisation et rationalisation du SI de la société</p></li>
-						<li><p>Lead technique pour les consultants externes</p></li>
-						<li><p>Mise en place de nombreuses architectures logicielles (Java EE, SOA, web, mobile)</p></li>
-						<li><p>Développement piloté par les tests en Java, PHP et JavaScript</p></li>
-						<li><p>Définition des stratégies de tests automatisés et des bonnes pratiques de développement</p></li>
-						<li><p>Optimisation des processus de développement grâce aux méthodes DevOps (intégration, livraison, déploiement continue)</p></li>
-						<li><p>Maintenance du parc applicatif de la société</p></li>
-					</ul>
-				</detail>
-				<detail>
-					<p>Projets clés :</p>
-					<ul>
-						<li><p>Solution de transfert d'argent innovante sur borne pour un déploiement en grande distribution</p></li>
-						<li><p>Intégration de SAP Business One et mise en place des interfaces pour l'échange automatique de données</p></li>
-						<li><p>Déploiement des services prépayés sur un nouveau système d'encaissement permettant l'accès à de nouveaux marchés</p></li>
-						<li><p>Refonte de la plateforme transactionnelle de la société pour fiabiliser et optimiser la distribution des produits</p></li>
+						<li><p>Estimation de charges, planification des projets et respect des délais</p></li>
+						<li><p>Suivi de l'activité de l'équipe et reporting auprès de la direction</p></li>
 					</ul>
 				</detail>
 			</details>
@@ -81,31 +87,17 @@
 			<start>avr. 2009</start>
 			<stop>avr. 2012</stop>
 			<logo width="130">img/cgi.png</logo>
-			<description>Responsable technique pour la SSII <a href="http://www.cgi.com/fr" class="external" target="_blank">CGI</a> à Caen</description>
+			<description>Expert technique pour la SSII <a href="http://www.cgi.com/fr" class="external" target="_blank">CGI</a> à Caen</description>
 			<details>
 				<detail>
-					<p>Gestion de projet :</p>
 					<ul>
-						<li><p>ScrumMaster d'une équipe de 3 développeurs</p></li>
-						<li><p>Relation client et participation à la rédaction des cahiers des charges</p></li>
-						<li><p>Estimation de charges et avant-vente</p></li>
-					</ul>
-				</detail>
-				<detail>
-					<p>Technique :</p>
-					<ul>
-						<li><p>Lead technique pour l'équipe Scrum</p></li>
+						<li><p>ScrumMaster / Lead technique d'une équipe Scrum composée de 3 développeurs</p></li>
+						<li><p>Accompagnement client sur la rédaction du cahier des charges</p></li>
 						<li><p>Rédaction de spécifications fonctionnelles et techniques</p></li>
-						<li><p>Mise en place d'une architecture logicielle basée sur Java EE</p></li>
-						<li><p>Développement piloté par les tests</p></li>
-						<li><p>Rédaction et passage de campagnes de tests</p></li>
-					</ul>
-				</detail>
-				<detail>
-					<p>Projets clés :</p>
-					<ul>
-						<li><p>Plate-forme SaaS d'édition graphique de services vocaux (<a href="http://www.orange-business.com/fr/produits/guide-vocal" class="external" target="_blank">Guide Vocal</a>) pour Orange</p></li>
-						<li><p>Plate-forme SaaS de gestion de transactions monétiques (<a href="https://www.afonepilot.com" class="external" target="_blank">AfonePilot</a>) pour <a href="http://www.afone.com/" class="external" target="_blank">Afone</a></p></li>
+						<li><p>Refonte et TMA (Java EE) d'une plate-forme SaaS d'édition graphique de services vocaux (<a href="http://www.orange-business.com/fr/produits/guide-vocal" class="external" target="_blank">Guide Vocal</a>) pour Orange</p></li>
+						<li><p>Architecture et développement piloté par les tests (Java EE) d'une plate-forme SaaS de gestion de transactions monétiques (<a href="https://www.afonepilot.com" class="external" target="_blank">AfonePilot</a>) pour <a href="http://www.afone.com/" class="external" target="_blank">Afone</a></p></li>
+						<li><p>Mise en place d'une plateforme d'intégration continue avec Jenkins/SonarQube</p></li>
+						<li><p>Rédaction et passage de campagnes de tests fonctionnels avec HPQC</p></li>
 					</ul>
 				</detail>
 			</details>
@@ -117,8 +109,10 @@
 			<description>Analyste développeur pour l'<a href="http://www.ens-cachan.fr/" class="external" target="_blank">école normale supérieure de Cachan</a></description>
 			<details>
 				<detail>
-					<p>Création de la <a href="http://www.stef.ens-cachan.fr/calico/outils/outils.htm" class="external" target="_blank">plate-forme Calico</a> permettant la visualisation et l'analyse collaborative de forums.</p>
-					<p>Plate-forme nominée à la compétition internationale "<a href="http://www.isls.org/cscl2009/" class="external" target="_blank">Computer Supported Collaborative Learning (CSCL)</a>" en 2009.</p>
+					<ul>
+						<li><p>Création de la plate-forme Calico permettant la visualisation et l'analyse collaborative de forums</p></li>
+						<li><p>Plate-forme nominée à la compétition internationale "Computer Supported Collaborative Learning (CSCL)" en 2009</p></li>
+					</ul>
 				</detail>
 			</details>
 		</experience>
@@ -126,10 +120,12 @@
 			<start>juil. 2007</start>
 			<stop>sep. 2007</stop>
 			<logo width="120">img/greyc.png</logo>
-			<description>Chercheur stagiaire pour le <a href="http://www.greyc.unicaen.fr/" class="external" target="_blank">Greyc</a> à Caen au sein de l'équipe Island</description>
+			<description>Chercheur stagiaire pour le <a href="https://www.greyc.fr/" class="external" target="_blank">Greyc</a> à Caen au sein de l'équipe Island</description>
 			<details>
 				<detail>
-					<p>Création d'une plate-forme permettant la collecte et l'analyse structurelle de documents web.</p>
+					<ul>
+						<li><p>Création d'une plate-forme permettant la collecte et l'analyse structurelle de documents web</p></li>
+					</ul>
 				</detail>
 			</details>
 		</experience>
@@ -147,7 +143,7 @@
 					<p>Master RADIS 2ème année</p>
 					<ul>
 						<li><p>Enseignements : codes correcteurs d'erreurs, compression, cryptographie, imagerie, réseaux et protocoles, sciences de l'ingénieur, traitement automatique des langues</p></li>
-						<li><p>Projets : génération automatique d'interfaces graphiques (XHTML) et vocales (VoiceXML), participation à la <a href="http://www.robocuprescue.org/" target="_blank" class="external">Robocup Rescue</a></p></li>
+						<li><p>Projets : génération automatique d'interfaces graphiques (XHTML) et vocales (VoiceXML), participation à la Robocup Rescue</p></li>
 					</ul>
 				</detail>
 				<detail class="noprint">
@@ -192,36 +188,42 @@
 
 	<competences fid="competences">
 		<title>Compétences</title>
-		<competence><b>Secteurs</b> : Télécoms, Monétique, Tourisme</competence>
-		<competence><b>Gestion de projet</b> : Scrum et cycle en V, Gantt, Mantis Bug Tracker, JIRA + GreenHopper, Microsoft Project, Redmine, Trello</competence>
-		<competence><b>Génie logiciel</b> : UML, Design pattern, SOA, Architectures n-tiers et MV*</competence>
-		<competence><b>Industrialisation</b> : Jenkins, Maven, Gradle, Subversion, Git, JUnit, Unitils, Docker, Capistrano, SonarQube, Apache JMeter, Bower</competence>
-		<competence><b>Java EE</b> : Spring (Data, Batch, Security), JSF (Richfaces, Primefaces), Wicket, JPA, Hibernate (Envers, Search), JAX-WS, JAX-RS, CXF, Axis, Solr/Lucene, Ehcache, c3p0, Guava, Orika</competence>
-		<competence><b>PHP</b> : Symfony2, Zend Framework, Twig, Doctrine</competence>
-		<competence><b>HTML5/JavaScript</b> : jQuery, jQuery Mobile, Backbone.js, AngularJS, Bootstrap</competence>
-		<competence><b>Développement mobile natif</b> : Android</competence>
-		<competence><b>Web Services</b> : SOAP/WSDL, REST</competence>
-		<competence><b>Téléphonie</b> : SVI, VoiceXML</competence>
+		<competence><b>Secteurs</b> : Télécoms, Monétique, Marketing, Communication, Pharmaceutique, Bancaire</competence>
+		<competence><b>Gestion de projet</b> : Scrum et cycle en V, Gantt, Mantis, JIRA, Redmine, Trello</competence>
+		<competence><b>Génie logiciel</b> : UML, Architecture (n-tier, MV*, SOA), Design pattern, SOLID, KISS, DRY</competence>
+		<competence><b>Dév Java EE</b> : Spring (Data, Batch, Security), JSF (Richfaces, Primefaces), Wicket, JPA, Hibernate (Envers, Search), JAX-WS, JAX-RS, CXF, Axis</competence>
+		<competence><b>Dév PHP</b> : Symfony, API Platform, Zend Framework</competence>
+		<competence><b>Dév JS</b> : Angular, Ionic, jQuery, jQuery Mobile, Backbone.js</competence>
+		<competence><b>Dév mobile</b> : Android</competence>
+		<competence><b>Intégration</b> : HTML5/CSS3, SaaS, Bootstrap, Material</competence>
 		<competence><b>Autres langages</b> : Shell, Python, ASP, Visual Basic, C#, Scheme, Haskell</competence>
+		<competence><b>SCM</b> : Git, GitLab, Subversion</competence>
+		<competence><b>Config management</b> : Vagrant, Docker</competence>
+		<competence><b>Package Management</b> : Composer, npm, Yarn, Maven</competence>
+		<competence><b>Build</b> : Grunt, Gulp, Webpack, Maven, Gradle</competence>
+		<competence><b>Testing</b> : TDD, PHPUnit, JUnit/Unitils, Jasmine, JMeter, Selenium, HPQC, TestLink</competence>
+		<competence><b>CI</b> : GitLab CI, Jenkins, SonarQube, Codacy</competence>
+		<competence><b>Deploy</b> : DeployBot, Jenkins, Capistrano</competence>
+		<competence><b>SGBD</b> : MySQL, PostgreSQL, Oracle, SQL Server, Elasticsearch</competence>
+		<competence><b>Serveurs Web</b> : Apache HTTP Server, Apache Tomcat</competence>
+		<competence><b>IDE</b> : PhpStorm, Eclipse, Android Studio</competence>
 		<competence><b>ERP</b> : SAP Business One</competence>
 		<competence><b>ETL</b> : Pentaho Data Integration</competence>
-		<competence><b>Reporting</b> : Reporting Services</competence>
-		<competence><b>IDE</b> : Eclipse, Visual Studio, Android Studio</competence>
-		<competence><b>Bases de données</b> : MySQL, PostgreSQL, Oracle, SQL Server, HSQLDB</competence>
-		<competence><b>Serveurs Web</b> : Apache HTTP Server, Apache Tomcat</competence>
-		<competence><b>Cloud</b> : Amazon Web Services</competence>
-		<competence><b>Langues</b> : Anglais (lu et écrit)</competence>
+		<competence><b>BI</b> : Bime Analytics, Qlik, Reporting Services</competence>
+		<competence><b>Marketing automation</b> : Mautic</competence>
+		<competence><b>Téléphonie</b> : SVI, VoiceXML</competence>
+		<competence><b>Langues</b> : Anglais technique</competence>
 		<logo width="160">img/competences.png</logo>
 	</competences>
 
 	<competences fid="leisures">
 		<title>Loisirs</title>
-		<competence>Pratique du basket depuis mes 8 ans, course à pied.</competence>
-		<competence>Musique, concerts et festivals.</competence>
-		<competence>Cinéphile, parfois théâtre.</competence>
-		<competence>Veille technologique, abonnement presse spécialisée (Programmez).</competence>
-		<competence>Presse en ligne et presse écrite. Actualité principalement scientifique, économique, politique et sportive.</competence>
-		<competence>Voyages en Europe (Grande-Bretagne, Espagne, Pays-Bas, Crête) comme ailleurs (Etats-Unis, Maroc, Turquie, DOM-TOM).</competence>
+		<competence>Sport en salle, course à pied, yoga</competence>
+		<competence>Musique, concerts et festivals</competence>
+		<competence>Cinéphile, parfois théâtre</competence>
+		<competence>Veille technologique, abonnement presse spécialisée (Programmez), participation meetups et événements</competence>
+		<competence>Presse en ligne et presse écrite. Actualité principalement scientifique, économique, politique et sportive</competence>
+		<competence>Voyages en Europe (Grande-Bretagne, Espagne, Suède) comme ailleurs (Etats-Unis, Turquie, DOM-TOM)</competence>
 	</competences>
 
 </homepage>
