@@ -81,7 +81,7 @@
 				</xsl:for-each>
 			</div>
 			<div class="website">
-				<p>Page source : http://pierre.crashdump.net/</p>
+				<p>Page source : http://plecavelier.fr/</p>
 			</div>
 		</div>
 	</xsl:template>
